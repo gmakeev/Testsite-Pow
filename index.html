@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestsitE</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/logo-desktop.png" alt="">
+                <span>TestsitE</span>
+            </a>
+            <nav class="menu-hidden" id="menu-top">
+                <ul class="menu-top">
+                    <li><a href="#" class="active">Register now</a></li>
+                    <li><a href="#">What It Is</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">Issuses</a></li>
+                </ul>
+            </nav>
+            <div class="nav-toggle" onclick="showDropDownTopMenu()">
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <section class="search">
+        <div class="container">
+            <div class="wrapper-search">
+                <input type="text" placeholder="Search" onfocus="showDropDownListAutoComplete()">
+                <div class="search-icon"><i></i></div>
+                <div class="list-auto-complete" id="message">
+                    <ul>
+                        <li><a href="#">
+                                <span class="text_top">found in <span>Playing</span></span>
+                                <span class="text_bottom"><span>Play</span>ing Use this module...</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="text_top">found in <span>Demo</span></span>
+                                <span class="text_bottom">Module for dis<span>play</span>ing and adding comments...</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="text_top">found in <span>Playing</span></span>
+                                <span class="text_bottom"><span>Play</span>ing Use this module...</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="text_top">found in <span>Demo</span></span>
+                                <span class="text_bottom">Module for dis<span>play</span>ing and adding comments...</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="text_top">found in <span>Playing</span></span>
+                                <span class="text_bottom"><span>Play</span>ing Use this module...</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <div class="container">
+            <aside>
+                <nav>
+                    <ul class="menu-aside">
+                        <li>
+                            <p class="accordion">Type of module #1</p>
+                            <ul>
+                                <li><a href="#">Slide pop up</a></li>
+                                <li><a href="#">Go to adjacent</a></li>
+                                <li><a href="#">Open PDF</a></li>
+                                <li><a href="#">Go to without animation</a></li>
+                                <li><a href="#">Go to with animation</a></li>
+                                <li><a href="#">Send e-mail</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="accordion">Type of module #2</p>
+                            <ul>
+                                <li><a href="#">Slide pop up2</a></li>
+                                <li><a href="#">Go to adjacent</a></li>
+                                <li><a href="#">Open PDF</a></li>
+                                <li><a href="#">Go to without animation</a></li>
+                                <li><a href="#">Go to with animation</a></li>
+                                <li><a href="#">Send e-mail</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="accordion">Type of module #3</p>
+                            <ul>
+                                <li><a href="#">Slide pop up3</a></li>
+                                <li><a href="#">Go to adjacent</a></li>
+                                <li><a href="#">Open PDF</a></li>
+                                <li><a href="#">Go to without animation</a></li>
+                                <li><a href="#">Go to with animation</a></li>
+                                <li><a href="#">Send e-mail</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="accordion">Type of module #4</p>
+                            <ul>
+                                <li><a href="#">Slide pop up4</a></li>
+                                <li><a href="#">Go to adjacent</a></li>
+                                <li><a href="#">Open PDF</a></li>
+                                <li><a href="#">Go to without animation</a></li>
+                                <li><a href="#">Go to with animation</a></li>
+                                <li><a href="#">Send e-mail</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="accordion">Type of module #5</p>
+                            <ul>
+                                <li><a href="#">Slide pop up5</a></li>
+                                <li><a href="#">Go to adjacent</a></li>
+                                <li><a href="#">Open PDF</a></li>
+                                <li><a href="#">Go to without animation</a></li>
+                                <li><a href="#">Go to with animation</a></li>
+                                <li><a href="#">Send e-mail</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <div class="content">
+                <h1>Go to adjacent</h1>
+                <p>Component for drawing in the presentation.</p>
+                <p>Consists of the button to enable / disable drawing mode and canvas - drawing area.</p>
+                <h2>Install</h2>
+                <div class="teg-code">
+                    <p>bower install --save test/paint-tool</p>
+                </div>
+                <h2>Link</h2>
+                <div class="teg-code">
+                    <p>&lt;link rv-component=" components/paint-tool"&gt;</p>
+                </div>
+                <h3>Styles:</h3>
+                <div class="teg-code">
+                    <p>&lt;link rel="stylesheet" href="compostyle.css"&gt;</p>
+                </div>
+                <h3>Use</h3>
+                <ol>
+                    <li>Need to add binder to draw on any element:
+                        <div class="teg-code">
+                            <p>&lt;button  rv-paint&gt;Paint&lt;/button&gt;</p>
+                        </div>
+                    </li>
+                    <li>When drawing mode is enabled, on this element automatically add class `active`.</li>
+                </ol>
+                <h2>Examples</h2>
+                <p>Besides you can change paint-tool default values. To do this, add an object `paint` in app.json.</p>
+                <ul>
+                    <li>`lineWidth` *(number)* - painting line width in px</li>
+                    <li>`color` *(string)* - painting line color</li>
+                    <li>`opacity` *(number [0-1])* - painting line transparency</li>
+                </ul>
+                <h3>Default values</h3>
+                <div class="teg-code">
+                        <pre>
+                            <code>
+                                "lineWidth": 5,
+                                  "color": 'red',
+                                  "opacity": 0.5
+                            </code>
+                        </pre>
+                </div>
+                <h3>Example (app.json)</h3>
+                <div class="teg-code">
+                    <pre>
+                        <code>
+                            "paint": {
+                                 "lineWidth": 8,
+                                 "color": "yellow",
+                                 "opacity": 0.6
+                              }
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="footer-menu">
+        <div class="container">
+            <nav>
+                <ul class="menu menu-bottom">
+                    <li><a href="#"  class="active">Site map</a></li>
+                    <li><a href="#">Register now</a></li>
+                    <li><a href="#">What It Is</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">Issuis</a></li>
+                </ul>
+            </nav>
+            <a id="btt" class="back-to-top" onclick="topFunction()">Back to top<i></i></a>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+                <div class="contact_us">
+                    <p>Contact us</p>
+                    <!--<div class="contact_us_boxes contact_us_boxes_first">-->
+                    <div class="contact_us_boxes">
+                        <div class="contact_us_box contact_us_box_first">
+                            <h3>Tallin</h3>
+                            <ul>
+                                <li>Address: Rävala pst 5, Tallinna linn,</li>
+                                <li>Harju maakond, 10143 Estonia</li>
+                                <li>Landline: +372 69 80 467</li>
+                            </ul>
+                        </div>
+                        <div class="contact_us_box">
+                            <h3>Zhytomyr</h3>
+                            <ul>
+                                <li>Address: 10003, Ukraine, Zhytomyr, Peremohy str., 99</li>
+                                <li>Landline/Fax: +380 412 425 904</li>
+                                <li>Mobile: +380 98 323 47 68</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--<div class="contact_us_boxes contact_us_boxes_second">-->
+                    <div class="contact_us_boxes">
+                        <div class="contact_us_box">
+                            <h3>Kyiv</h3>
+                            <ul>
+                                <li>Address: 04073, Ukraine, Kyiv,</li>
+                                <li>Pymomenko str., 13, </li>
+                                <li>Business Centre “Forum”,</li>
+                                <li>building 6A, office 28</li>
+                                <li>Landline/Fax: +38 044 222 62 65</li>
+                                <li>Mobile: +380 97 532 86 13</li>
+                            </ul>
+                        </div>
+                        <div class="contact_us_box">
+                            <a href="index.html" class="logo">
+                                <img src="img/logo-desktop.png" alt="logo">
+                                <span>TestsitE</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="follow_us">
+                    <p>Follow us</p>
+                    <div class="social_box">
+                        <a href="#"><img src="img/icon-fb.png" alt=""></a>
+                        <a href="#"><img src="img/icon-tw.png" alt=""></a>
+                        <a href="#"><img src="img/icon-in.png" alt=""></a>
+                        <a href="#"><img src="img/icon-dots.png" alt=""></a>
+                    </div>
+                    <div class="copyright">
+                        <img src="img/logo-qap.png" alt="QAP logo">
+                        <ul>
+                            <li>Privacy Policy.</li>
+                            <li>&copy; 2007-2014. All rights reserved. </li>
+                            <li>QAPInt is a trademark of QAPInt.</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
